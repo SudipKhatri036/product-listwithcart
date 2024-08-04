@@ -54,7 +54,7 @@ body {
   display: flex;
   align-items: flex-start;
   column-gap: 2rem;
-  background-color: var(--Rose-100);
+  background-color: var(--Rose-50);
 }
 
 .content-container {
