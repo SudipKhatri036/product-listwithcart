@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- prettier-ignore -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="content-container">
+        <h1>Desserts</h1>
+        <ul class="grid-container"></ul>
+      </div>
+      <div class="cart-container">
+        <h2>Your Cart (<span class="total-product">0</span>)</h2>
+        <div class="no-items-content">
+          <img
+            src="./assets/images/illustration-empty-cart.svg"
+            alt="Empty Cart Illustration"
+          />
+          <p class="empty-cart-text">Your added items will appear here</p>
+        </div>
+        <ul class="cart-product-lists"></ul>
+        <div class="cart-order-detail hidden">
+          <div class="total-amt">
+            <p>Order Total</p>
+            <h2>$46.50</h2>
+          </div>
+          <p class="delivery-detail">
+            <img
+              src="./assets/images/icon-carbon-neutral.svg"
+              alt="Carbon Neutral"
+            />This is a <span>carbon-neutral</span> delivery
+          </p>
+          <button class="confirm-btn">Confirm Order</button>
+        </div>
+      </div>
+
+      <div class="overlay-wrapper">
+        <div class="confirmation-container">
+          <div>
+            <img
+              src="./assets/images/icon-order-confirmed.svg"
+              alt="Ordir confirm svg"
+            />
+            <h2>Order Confirmed</h2>
+            <p class="message">We hope you enjoy your food!</p>
+
+            <ul class="confirmation-product-list"></ul>
+          </div>
+          <div>
+            <div class="total-amt">
+              <p>Order Total</p>
+              <h2>$46.50</h2>
+            </div>
+            <button class="confirm-btn new-order-btn">Start New Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      <p class="anim">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Sudip Khatri</a>.
+      </p>
+    </div>
+  </body>
+</html>
